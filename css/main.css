@@ -28,6 +28,11 @@ html {
 
 img{
   width: 100%;
+  position: absolute;
+}
+
+.tabs {
+  text-align: center;
 }
 
 .tabs a{
@@ -38,6 +43,16 @@ img{
   padding: .5em;
   border-radius: 100%;
   border: 2px solid #ccc;
-  transition: all 500ms linear;
-  position: relative\;
+}
+
+.tabs a:hover{
+  background-color: #ccc;
+}
+
+.panel{
+  display: none;
+}
+
+.panel:target {
+  display: block;
 }
